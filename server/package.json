@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
     "client": "npm start --prefix ./client",
+    "postinstall":"prisma generate",
     "dev": "concurrently \"npm run server\" \"npm run client\""
+    
   },
   "author": "techinfoyt",
   "license": "ISC",
